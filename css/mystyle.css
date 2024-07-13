@@ -8,6 +8,7 @@
 }
 
 .navbar {
+  padding: 0;
   border-bottom: 1px solid #ddd;
 }
 
@@ -43,9 +44,10 @@ ul.navbar-nav.mr-auto {
 
 .bannerBoxBG {
   background-image: url("../images/bannerLogoBG.png");
-  background-size: cover;
+  background-size: 50% 80%;
+  background-position: right center;
   background-repeat: no-repeat;
-  min-height: 240px;
+  /* min-height: 240px; */
 }
 
 .PortfolioBanner {
@@ -56,7 +58,10 @@ ul.navbar-nav.mr-auto {
 }
 
 .appFaster {
-  padding-top: 94px;
+  background-image: url("../images/robot.png");
+  padding: 10% 55% 16% 0;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .img-mobileFrame {
@@ -73,8 +78,10 @@ ul.navbar-nav.mr-auto {
 
 .category-listItem {
   display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
 }
 
@@ -89,7 +96,7 @@ ul.navbar-nav.mr-auto .nav-item {
 }
 
 .category-listBox {
-  width: 245px;
+  width: calc(25% - 16px);
   height: 152px;
   background: #E4EFFF;
   border: 1px solid #9CC1FF;
@@ -98,7 +105,7 @@ ul.navbar-nav.mr-auto .nav-item {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
-  margin: 0 10px;
+  margin: 0;
 }
 
 .category-photo {
@@ -115,6 +122,18 @@ ul.navbar-nav.mr-auto .nav-item {
   color: #0C3571;
   font-weight: 500;
   font-size: 25px;
+}
+
+.appFaster h1 {
+  color: #0C3571;
+  font-weight: 700;
+  font-size: 52px;
+}
+
+.appFaster p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
 }
 
 .mainHeading p {
@@ -170,7 +189,7 @@ p {
 .readMoreBtn {
   color: #0C3571;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 800;
   position: relative;
   margin-left: 11px;
   background-color: #fff;
@@ -408,7 +427,7 @@ footer {
 
 
 .Companylogo {
-  
+
   max-width: 180px;
 }
 
