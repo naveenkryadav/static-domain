@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #3A393E;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #0C3571;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+ul.navbar-nav.mr-auto {
+  padding-left: 34px;
+}
+
+.modalBtn {
+  width: 175px;
+  height: 46px;
+  background: #0C3571;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.topBanner {
+  min-height: 306px;
+}
+
+.logobannerLeft {
+  width: 132px;
+  margin: 18px auto;
+  display: block;
+}
+
+.bannerBoxBG {
+  background-image: url("../images/bannerLogoBG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 240px;
+}
+
+.PortfolioBanner {
+  background-image: url("../images/PortfolioBanner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.appFaster {
+  padding-top: 94px;
+}
+
+.img-mobileFrame {
+  position: absolute;
+  top: 15%;
+  left: -20%;
+
+  background-image: url("../images/mobileInner.png");
+  background-size: 86%;
+  background-repeat: no-repeat;
+  margin: 0px auto;
+  background-position: 21px 15px;
+}
+
+.category-listItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.fixed-top {
+  background-color: #fff;
+  box-shadow: 0px 4px 10px #b9b9b9;
+  /* padding: 0; */
+}
+
+ul.navbar-nav.mr-auto .nav-item {
+  padding: 0 20px 0 0;
+}
+
+.category-listBox {
+  width: 245px;
+  height: 152px;
+  background: #E4EFFF;
+  border: 1px solid #9CC1FF;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  margin: 0 10px;
+}
+
+.category-photo {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.category-photo img {
+  max-width: 60px;
+}
+
+.mainHeading h4 {
+  color: #0C3571;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.mainHeading p {
+  color: #81AAE8;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+p {
+  color: #0C3571;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.boxPadding .container .borderPadding,
+.boxPadding .container-fluid .borderPadding {
+  padding-top: 74px;
+  border-top: 1px solid #81AAE8;
+}
+
+.boxPadding {
+  margin-top: 62px;
+}
+
+.img-ulteriorRound {
+  width: 60px;
+}
+
+.certificationRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.certificationCol {
+  display: flex;
+  align-items: center;
+}
+
+.certificationCol img {
+  width: 34px;
+}
+
+.certificationCol p {
+  padding-left: 10px;
+  line-height: 18px;
+  margin-top: 15px;
+}
+
+.readMoreBtn {
+  color: #0C3571;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  margin-left: 11px;
+  background-color: #fff;
+}
+
+.workNumber {
+  color: #0C3571;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #0C3571;
+  font-size: 92px;
+  font-weight: 800;
+  line-height: 0;
+}
+
+.choose {
+  color: #0C3571;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.serviceChoose h6 {
+  display: flex;
+  align-items: center;
+}
+
+.serviceChoose {
+  position: relative;
+}
+
+.serviceChoose:after {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  border-radius: 50%;
+  box-shadow: inset 0px 10px 20px #02193b4f;
+  left: 10px;
+}
+
+.serviceChoose p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.weWorkPadding {
+  padding: 74px 0 44px;
+}
+
+.fixed-top .Companylogo {
+  max-width: 122px;
+}
+
+.customers-touch {
+  padding-top: 24px;
+}
+
+footer {
+  background-color: #303d6d;
+  padding-top: 74px;
+  border-top: 1px solid #81AAE8;
+}
+
+.mailBoxIocn {
+  max-width: 260px;
+  margin: 0;
+}
+
+.HoursIcon {
+  max-width: 120px;
+  margin: 0px auto;
+  display: block;
+}
+
+.appBlog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.appBlog img {
+  margin: 10px 6px;
+}
+
+.readMoreBtn:before {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  top: -4px;
+  left: -11px;
+  border: 1px solid #0c3571;
+  position: absolute;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.circilMainBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.ulteriorRound {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 540px;
+}
+
+.Circillogo {
+  position: absolute;
+  border-top: 5px solid #000;
+  left: calc((540px - 100px) / 2);
+  top: calc((540px - 100px) / 2);
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background: #fff center center no-repeat;
+  background-size: 80%;
+  box-shadow: inset 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle,
+.outer {
+  position: absolute;
+  pointer-events: none;
+}
+
+.middle {
+  left: calc((100% - 260px) / 2);
+  top: calc((100% - 260px) / 2);
+  width: 260px;
+  height: 260px;
+  animation: rotate 35s linear infinite;
+}
+
+.outer {
+  left: calc((380px - 220px) / 2);
+  top: calc((380px - 220px) / 2);
+  width: 380px;
+  height: 380px;
+  animation: rotate 45s reverse linear infinite;
+}
+
+.middle.dots,
+.outer.dots {
+  border: 0.5px solid #0c3571;
+  border-radius: 500px;
+}
+
+.middle.dots {
+  border-color: #0c3571;
+}
+
+.dot {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: -24px;
+  top: calc(50% - 24px);
+  border-radius: 100px;
+  background: #fff center center;
+  background-size: 85%;
+  box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dot:nth-child(2) {
+  left: calc(100% - 24px);
+}
+
+.middle .dot:nth-child(3) {
+  left: calc(100% - 164px);
+  top: calc(100% - 31px);
+}
+
+.middle .dot:nth-child(4) {
+  left: calc(100% - 155px);
+  top: calc(100% - 279px);
+}
+
+.middle .dot,
+.middle .target {
+  animation: rotate 35s reverse linear infinite;
+}
+
+.outer .dot,
+.outer .target {
+  animation: rotate 45s linear infinite;
+}
+
+.dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot img {
+  max-width: 70%;
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.Companylogo {
+  
+  max-width: 180px;
+}
+
+.footer-logo-box img {
+  max-width: 200px;
+}
