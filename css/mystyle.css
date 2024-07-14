@@ -7,6 +7,24 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0C3571;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   padding: 0;
   border-bottom: 1px solid #ddd;
@@ -26,10 +44,17 @@ ul.navbar-nav.mr-auto {
   width: 175px;
   height: 46px;
   background: #0C3571;
+  border: 1px solid #0C3571;
   border-radius: 4px;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
+}
+
+.modalBtn:hover {
+  background: #fff;
+  border: 1px solid #0C3571;
+  color: #0C3571;
 }
 
 .topBanner {
@@ -51,17 +76,38 @@ ul.navbar-nav.mr-auto {
 }
 
 .PortfolioBanner {
-  background-image: url("../images/PortfolioBanner.png");
+  background-image: url("../images/PortfolioBanner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  border-radius: 0 10px 10px 0;
 }
 
 .appFaster {
   background-image: url("../images/robot.png");
   padding: 10% 55% 16% 0;
   background-repeat: no-repeat;
-  background-position: right;
+  /* background-position: right; */
+  background-position: right 0% top 0%;
+  animation: mymove 15s infinite;
+}
+
+@keyframes mymove {
+  20% {
+    background-position: right 30% top 0%;
+  }
+
+  40% {
+    background-position: right 30% top 30%;
+  }
+
+  60% {
+    background-position: right 0% top 30%;
+  }
+
+  80% {
+    background-position: right 0% top 0%;
+  }
 }
 
 .img-mobileFrame {
@@ -106,6 +152,15 @@ ul.navbar-nav.mr-auto .nav-item {
   flex-flow: column;
   justify-content: space-around;
   margin: 0;
+  transition: all .15s ease-in-out;
+}
+
+.category-listBox:hover {
+  border-color: #0C3571;
+  box-shadow: 0 .45rem .45rem 0 #b3d2ff;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  cursor: pointer;
 }
 
 .category-photo {
@@ -116,12 +171,30 @@ ul.navbar-nav.mr-auto .nav-item {
 
 .category-photo img {
   max-width: 60px;
+  animation: oiclApp 6s ease-in-out infinite;
+}
+
+@keyframes oiclApp {
+  0% {
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+  }
+
+  50% {
+    -webkit-transform: translatey(-10px);
+    transform: translatey(-10px);
+  }
+
+  100% {
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+  }
 }
 
 .mainHeading h4 {
   color: #0C3571;
-  font-weight: 500;
-  font-size: 25px;
+  font-weight: 700;
+  font-size: 28px;
 }
 
 .appFaster h1 {
@@ -137,23 +210,23 @@ ul.navbar-nav.mr-auto .nav-item {
 }
 
 .mainHeading p {
-  color: #81AAE8;
-  font-size: 15px;
+  color: #0C3571;
+  font-size: 18px;
   line-height: 18px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 p {
   color: #0C3571;
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
 }
 
 .boxPadding .container .borderPadding,
 .boxPadding .container-fluid .borderPadding {
   padding-top: 74px;
-  border-top: 1px solid #81AAE8;
+
 }
 
 .boxPadding {
@@ -167,8 +240,9 @@ p {
 .certificationRow {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   margin-bottom: 24px;
+  gap: 34px;
 }
 
 .certificationCol {
@@ -256,6 +330,18 @@ footer {
   background-color: #303d6d;
   padding-top: 74px;
   border-top: 1px solid #81AAE8;
+
+  h4 {
+    color: fff;
+  }
+
+  p {
+    color: #fff;
+
+    strong {
+      color: #fff;
+    }
+  }
 }
 
 .mailBoxIocn {
@@ -265,8 +351,8 @@ footer {
 
 .HoursIcon {
   max-width: 120px;
-  margin: 0px auto;
-  display: block;
+  /* margin: 0px auto;
+  display: block; */
 }
 
 .appBlog {
@@ -346,7 +432,7 @@ footer {
 }
 
 .middle {
-  left: calc((100% - 260px) / 2);
+  left: calc((100% - 350px) / 2);
   top: calc((100% - 260px) / 2);
   width: 260px;
   height: 260px;
@@ -433,4 +519,205 @@ footer {
 
 .footer-logo-box img {
   max-width: 200px;
+}
+
+.footer-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 64px;
+  flex-wrap: wrap;
+  row-gap: 16px;
+
+  li {
+    list-style: none;
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.copyright {
+  border-top: 1px solid #152150;
+  text-align: center;
+
+  p {
+    margin-bottom: 0px;
+    padding-top: 22px;
+    color: #cfcfcf;
+  }
+}
+
+.mail-form {
+  .form-control {
+    min-height: 54px;
+    border-radius: 8px;
+  }
+
+  .btn {
+    width: 175px;
+    height: 46px;
+    background: #0C3571;
+    border: 1px solid #0C3571;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .btn:hover {
+    background: #fff;
+    border: 1px solid #0C3571;
+    color: #0C3571;
+  }
+}
+
+#portfolio {
+  background-color: #E4EFFF;
+  padding: 0 24% 44px 24%;
+  text-align: center;
+}
+
+.mailBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 44px;
+}
+
+#contactUs {
+  padding-top: 44px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+  margin: 44px 0 0;
+
+  a {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.main-footer {
+  padding-bottom: 44px;
+}
+
+@media only screen and (max-width: 578px) {
+  #portfolio {
+    padding: 0;
+  }
+
+  .category-listBox {
+    width: calc(50% - 8px);
+  }
+
+  .circilMainBox {
+    overflow: hidden;
+  }
+
+  .certificationRow {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .PortfolioBanner {
+    border-radius: 0;
+    min-height: 200px;
+    margin-bottom: 16px;
+  }
+
+  .category-details {
+    h4 {
+      font-size: 16px;
+    }
+  }
+
+  .appFaster {
+    padding: 0;
+    min-height: 270px;
+    background-image: none;
+
+    h1 {
+      font-size: 32px;
+      margin-top: 44px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+
+  ul.navbar-nav.mr-auto .nav-item {
+    padding: 0 0px 0 0;
+  }
+
+  .mainHeading p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .boxPadding .container .borderPadding,
+  .boxPadding .container-fluid .borderPadding {
+    padding-top: 44px;
+
+  }
+
+  .boxPadding {
+    margin-top: 16px;
+  }
+
+
+  .outer {
+    left: calc((380px - 354px) / 2);
+    top: calc((380px - 250px) / 2);
+    width: 260px;
+    height: 260px;
+  }
+
+  .middle {
+    left: calc((100% - 189px) / 2);
+    top: calc((100% - 152px) / 2);
+    width: 180px;
+    height: 180px;
+  }
+
+  .Circillogo {
+    left: calc((290px - 100px) / 2);
+    top: calc((390px - 100px) / 2);
+  }
+
+  .ulteriorRound {
+    min-height: 360px;
+  }
+
+  .mailBox {
+    gap: 16px;
+  }
+
+  .footer-menu {
+    li {
+      width: calc(50% - 32px);
+    }
+  }
+
+  ul.navbar-nav.mr-auto {
+    padding-left: 0px;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    border-bottom: 1px solid #efefef;
+    padding: 10px 16px;
+  }
+
+  .modalBtn {
+    margin-left: 16px;
+  }
 }
