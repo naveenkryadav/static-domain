@@ -216,6 +216,19 @@ ul.navbar-nav.mr-auto .nav-item {
   font-weight: 500;
 }
 
+.custom-list {
+  list-style-type: square; 
+  padding: 20px;          
+  background-color: #e4effe;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.custom-list li {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
 p {
   color: #0C3571;
   font-size: 16px;
@@ -720,4 +733,5 @@ footer {
   .modalBtn {
     margin-left: 16px;
   }
+
 }
