@@ -683,7 +683,8 @@ footer {
   -webkit-transform: translateY(-3px);
   transform: translateY(-3px);
 }
-.about-us-col{
+
+.about-us-col {
   padding-top: 62px;
 }
 
@@ -691,6 +692,15 @@ footer {
 
 
 @media only screen and (max-width: 578px) {
+  .commitment-3 {
+    width: calc(100% - 0px);
+    padding: 10px;
+  }
+
+  .footer-address {
+    padding-right: 0%;
+  }
+
   #portfolio {
     padding: 0;
   }
@@ -733,8 +743,12 @@ footer {
     p {
       font-size: 18px;
       line-height: 26px;
+      padding-right: 0px;
+
     }
   }
+
+
 
   ul.navbar-nav.mr-auto .nav-item {
     padding: 0 0px 0 0;
@@ -801,4 +815,52 @@ footer {
   .modalBtn {
     margin-left: 16px;
   }
+}
+
+
+@media only screen and (max-width: 480px) {
+  footer {
+    padding-top: 44px;
+  }
+
+  .footer-address p {
+    font-size: 14px !important;
+    line-height: 22px;
+  }
+
+  .footer-menu {
+    & li {
+      a {
+        font-size: 15px !important;
+      }
+    }
+  }
+
+  .copyright {
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .mainHeading h4 {
+    font-size: 22px;
+  }
+
+  .mainHeading p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .choose {
+    font-size: 18px;
+  }
+
+  .category-listItem {
+    margin-top: 26px;
+  }
+
+  .about-us-col {
+    padding-top: 16px;
+  }
+
 }
