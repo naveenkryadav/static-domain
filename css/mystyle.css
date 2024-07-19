@@ -220,19 +220,6 @@ ul.navbar-nav.mr-auto .nav-item {
   font-weight: 500;
 }
 
-.custom-list {
-  list-style-type: square; 
-  padding: 20px;          
-  background-color: #e4effe;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.custom-list li {
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-
 p {
   color: #0C3571;
   font-size: 16px;
@@ -643,6 +630,66 @@ footer {
   padding-bottom: 44px;
 }
 
+
+
+
+.custom-list {
+  list-style-type: square;
+  padding: 20px;
+  background-color: #e4effe;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.custom-list li {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+
+.footer-address {
+  padding-right: 35%;
+}
+
+.we-do {
+  margin-top: 38px;
+}
+
+.we-do h4 {
+  color: #0C3571;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.commitment-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 26px;
+}
+
+.commitment-3 {
+  width: calc(25% - 12px);
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  cursor: pointer;
+  padding: 22px 16px;
+  transition: all .15s ease-in-out;
+}
+
+.commitment-3:hover {
+  box-shadow: 0 .45rem .45rem 0 #f8ede3;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+.about-us-col{
+  padding-top: 62px;
+}
+
+
+
+
 @media only screen and (max-width: 578px) {
   #portfolio {
     padding: 0;
@@ -754,62 +801,4 @@ footer {
   .modalBtn {
     margin-left: 16px;
   }
-
-}
-
-
-.custom-list {
-  list-style-type: square;
-  padding: 20px;
-  background-color: #e4effe;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.custom-list li {
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-
-
-.footer-address {
-  padding-right: 35%;
-}
-
-.we-do {
-  margin-top: 38px;
-}
-
-.we-do h4 {
-  color: #0C3571;
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.commitment-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-top: 26px;
-}
-
-.commitment-3 {
-  width: calc(25% - 12px);
-  position: relative;
-  border: 1px solid #ddd;
-  border-radius: 14px;
-  cursor: pointer;
-  padding: 22px 16px;
-  transition: all .15s ease-in-out;
-}
-
-.commitment-3:hover {
-  box-shadow: 0 .45rem .45rem 0 #f8ede3;
-  -webkit-transform: translateY(-3px);
-  transform: translateY(-3px);
-}
-
-.about-us-col{
-  padding-top: 62px;
-
 }
