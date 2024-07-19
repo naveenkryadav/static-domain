@@ -819,6 +819,7 @@ footer {
 
 
 @media only screen and (max-width: 480px) {
+  
   footer {
     padding-top: 44px;
   }
