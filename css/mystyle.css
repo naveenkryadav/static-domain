@@ -49,6 +49,7 @@ ul.navbar-nav.mr-auto {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
+  transition: all ease-in-out 0.6s;
 }
 
 .modalBtn:hover {
@@ -85,7 +86,7 @@ ul.navbar-nav.mr-auto {
 
 .appFaster {
   background-image: url("../images/robot.png");
-  padding: 10% 55% 16% 0;
+  padding: 10% 0 12% 0;
   background-repeat: no-repeat;
   /* background-position: right; */
   background-position: right 0% top 0%;
@@ -205,8 +206,11 @@ ul.navbar-nav.mr-auto .nav-item {
 
 .appFaster p {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 34px;
+  padding-right: 50%;
+  margin-top: 16px;
+  margin-bottom: 28px;
 }
 
 .mainHeading p {
@@ -214,19 +218,6 @@ ul.navbar-nav.mr-auto .nav-item {
   font-size: 18px;
   line-height: 18px;
   font-weight: 500;
-}
-
-.custom-list {
-  list-style-type: square; 
-  padding: 20px;          
-  background-color: #e4effe;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.custom-list li {
-  margin-bottom: 10px;
-  margin-left: 10px;
 }
 
 p {
@@ -297,7 +288,6 @@ p {
   font-size: 22px;
   line-height: 28px;
   font-weight: 600;
-  padding-left: 10px;
 }
 
 .serviceChoose h6 {
@@ -305,11 +295,16 @@ p {
   align-items: center;
 }
 
-.serviceChoose {
+/* .serviceChoose {
   position: relative;
-}
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  cursor: pointer;
+  padding: 22px 16px;
+  transition: all .15s ease-in-out;
+} */
 
-.serviceChoose:after {
+/* .serviceChoose:after {
   content: "";
   display: block;
   width: 160px;
@@ -320,11 +315,10 @@ p {
   border-radius: 50%;
   box-shadow: inset 0px 10px 20px #02193b4f;
   left: 10px;
-}
+} */
 
 .serviceChoose p {
-  text-align: center;
-  margin-top: 15px;
+  margin: 0px;
 }
 
 .weWorkPadding {
@@ -547,6 +541,10 @@ footer {
 
     a {
       color: #fff;
+
+      &:hover {
+        color: #a5acc9;
+      }
     }
   }
 }
@@ -577,6 +575,7 @@ footer {
     color: #fff;
     font-size: 16px;
     font-weight: 400;
+    transition: all ease-in-out 0.6s;
   }
 
   .btn:hover {
@@ -601,6 +600,9 @@ footer {
 
 #contactUs {
   padding-top: 44px;
+  background-image: url("../images/app-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .footer-social {
@@ -615,6 +617,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all ease-in-out 200ms;
+
+    &:hover {
+      border-radius: 6px;
+      box-shadow: 5px 7px 9px #16224e;
+    }
   }
 }
 
@@ -622,7 +630,77 @@ footer {
   padding-bottom: 44px;
 }
 
+
+
+
+.custom-list {
+  list-style-type: square;
+  padding: 20px;
+  background-color: #e4effe;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.custom-list li {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+
+.footer-address {
+  padding-right: 35%;
+}
+
+.we-do {
+  margin-top: 38px;
+}
+
+.we-do h4 {
+  color: #0C3571;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.commitment-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 26px;
+}
+
+.commitment-3 {
+  width: calc(25% - 12px);
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  cursor: pointer;
+  padding: 22px 16px;
+  transition: all .15s ease-in-out;
+}
+
+.commitment-3:hover {
+  box-shadow: 0 .45rem .45rem 0 #f8ede3;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.about-us-col {
+  padding-top: 62px;
+}
+
+
+
+
 @media only screen and (max-width: 578px) {
+  .commitment-3 {
+    width: calc(100% - 0px);
+    padding: 10px;
+  }
+
+  .footer-address {
+    padding-right: 0%;
+  }
+
   #portfolio {
     padding: 0;
   }
@@ -665,8 +743,12 @@ footer {
     p {
       font-size: 18px;
       line-height: 26px;
+      padding-right: 0px;
+
     }
   }
+
+
 
   ul.navbar-nav.mr-auto .nav-item {
     padding: 0 0px 0 0;
@@ -732,6 +814,53 @@ footer {
 
   .modalBtn {
     margin-left: 16px;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  
+  footer {
+    padding-top: 44px;
+  }
+
+  .footer-address p {
+    font-size: 14px !important;
+    line-height: 22px;
+  }
+
+  .footer-menu {
+    & li {
+      a {
+        font-size: 15px !important;
+      }
+    }
+  }
+
+  .copyright {
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .mainHeading h4 {
+    font-size: 22px;
+  }
+
+  .mainHeading p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .choose {
+    font-size: 18px;
+  }
+
+  .category-listItem {
+    margin-top: 26px;
+  }
+  .about-us-col {
+    padding-top: 16px;
   }
 
 }
